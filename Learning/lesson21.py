@@ -10,7 +10,7 @@ import os
 
 root = Tk()
 root.title('crap baskets')
-root.iconbitmap('Testing_Grounds_PY/Tk_images/cha0scharly.ico')
+# root.iconbitmap('Testing_Grounds_PY/Tk_images/cha0scharly.ico')
 root.geometry("378x600")
 
 
@@ -32,7 +32,7 @@ result.pack()
 # Databases
 
 #Create or connect to a database
-conn = sqlite3.connect('Testing_Grounds_PY/Tkinter-Test/Learning/Database/Address Book/address_book.db')
+conn = sqlite3.connect('Learning/Database/Address Book/address_book.db')
 
 # Create a curser
 c = conn.cursor()
@@ -51,7 +51,7 @@ c.execute("""CREATE TABLE addresses(
 # Edit Function to update records
 def edit():
     #Create or connect to a database
-    conn = sqlite3.connect('Testing_Grounds_PY/Tkinter-Test/Learning/Database/Address Book/address_book.db')
+    conn = sqlite3.connect('')
 
     # Create a curser
     c = conn.cursor()
@@ -122,7 +122,7 @@ def edit():
 # Delete Record Function
 def delete():
         #Create or connect to a database
-    conn = sqlite3.connect('Testing_Grounds_PY/Tkinter-Test/Learning/Database/Address Book/address_book.db')
+    conn = sqlite3.connect('Learning/Database/Address Book/address_book.db')
 
     # Create a curser
     c = conn.cursor()
@@ -140,7 +140,7 @@ def delete():
 # Submit function
 def submit():
     #Create or connect to a database
-    conn = sqlite3.connect('Testing_Grounds_PY/Tkinter-Test/Learning/Database/Address Book/address_book.db')
+    conn = sqlite3.connect('')
 
     # Create a curser
     c = conn.cursor()
@@ -173,7 +173,7 @@ def submit():
 # Submit function
 def query():
     #Create or connect to a database
-    conn = sqlite3.connect('Testing_Grounds_PY/Tkinter-Test/Learning/Database/Address Book/address_book.db')
+    conn = sqlite3.connect('Learning/Database/Address Book/address_book.db')
 
     # Create a curser
     c = conn.cursor()
